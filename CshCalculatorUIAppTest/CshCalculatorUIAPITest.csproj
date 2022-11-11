@@ -63,7 +63,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CShCalcualtorLibTest\CShCalcualtorLibTest.csproj">
+    <ProjectReference Include="..\CShCalculatorLibTest\CShCalcualtorLibTest.csproj">
       <Project>{218da32a-c653-40ee-afb8-d7414d6adcc0}</Project>
       <Name>CShCalcualtorLibTest</Name>
     </ProjectReference>
@@ -71,15 +71,15 @@
       <Project>{1b69216b-0f6a-4a4d-baaa-71d0f85b2044}</Project>
       <Name>CShCalcualtorLib</Name>
     </ProjectReference>
-    <ProjectReference Include="..\CshCalculatorUIAPI\CshCalculatorUIAPI.csproj">
+    <ProjectReference Include="..\CShCalculatorUIAppAPI\CshCalculatorUIAPI.csproj">
       <Project>{5f60b826-2c6c-4bde-abb6-fb3c97af77b8}</Project>
       <Name>CshCalculatorUIAPI</Name>
     </ProjectReference>
-    <ProjectReference Include="..\CShCalculatorUiCtrl\CShCalculatorCtrl.csproj">
+    <ProjectReference Include="..\CShCalculatorLibCtrl\CShCalculatorCtrl.csproj">
       <Project>{28cb1b92-e70e-431e-9e73-a4d7f12c2eb2}</Project>
       <Name>CShCalculatorCtrl</Name>
     </ProjectReference>
-    <ProjectReference Include="..\CshUserApplication\CshCalcualtorUserApp.csproj">
+    <ProjectReference Include="..\CshCalculatorUIApp\CshCalcualtorUserApp.csproj">
       <Project>{d9937b6d-6bbe-4ded-94e8-8805b7a4c9d5}</Project>
       <Name>CshCalcualtorUserApp</Name>
     </ProjectReference>
