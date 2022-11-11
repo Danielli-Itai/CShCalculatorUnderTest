@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 
 
-namespace MathCalcualtorLib
+namespace CalcualtorLib
 {
     public class SimpleCalculator
 	{

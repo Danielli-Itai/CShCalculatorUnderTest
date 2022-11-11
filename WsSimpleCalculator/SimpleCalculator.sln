@@ -5,7 +5,7 @@ VisualStudioVersion = 17.1.32407.343
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CshCalculatorUIAPI", "..\CshCalculatorUIAPI\CshCalculatorUIAPI.csproj", "{5F60B826-2C6C-4BDE-ABB6-FB3C97AF77B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CshUserCalcualtorUI", "..\CshUserApplication\CshUserCalcualtorUI.csproj", "{D9937B6D-6BBE-4DED-94E8-8805B7A4C9D5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CshCalcualtorUserApp", "..\CshCalculatorUI\CshCalcualtorUserApp.csproj", "{D9937B6D-6BBE-4DED-94E8-8805B7A4C9D5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CShCalcualtorLib", "..\CShCalculatorLib\CShCalcualtorLib.csproj", "{1B69216B-0F6A-4A4D-BAAA-71D0F85B2044}"
 EndProject
@@ -19,7 +19,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UserApplication", "UserAppl
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UserApplicationTest", "UserApplicationTest", "{C2755EF4-84AA-4A7B-9ABA-1AAC25014CB4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CShCalcualtorLibTest", "..\CShCalcualtorLibTest\CShCalcualtorLibTest.csproj", "{218DA32A-C653-40EE-AFB8-D7414D6ADCC0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CShCalcualtorLibTest", "..\CShCalculatorLibTest\CShCalcualtorLibTest.csproj", "{218DA32A-C653-40EE-AFB8-D7414D6ADCC0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CshCalculatorUIAPITest", "..\CshCalculatorUIAPITest\CshCalculatorUIAPITest.csproj", "{43723E42-EED6-4088-ACC9-B7B9F02CA3D3}"
 EndProject
