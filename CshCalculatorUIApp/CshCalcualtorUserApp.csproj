@@ -33,9 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CShCalculatorCtrl">
-      <HintPath>..\CShCalculatorUiCtrl\obj\Debug\CShCalculatorCtrl.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -83,6 +80,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CShCalculatorLibCtrl\CShCalculatorCtrl.csproj">
+      <Project>{28cb1b92-e70e-431e-9e73-a4d7f12c2eb2}</Project>
+      <Name>CShCalculatorCtrl</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CShCalculatorLib\CShCalcualtorLib.csproj">
       <Project>{1b69216b-0f6a-4a4d-baaa-71d0f85b2044}</Project>
       <Name>CShCalcualtorLib</Name>
