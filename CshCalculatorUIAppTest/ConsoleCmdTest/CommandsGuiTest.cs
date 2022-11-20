@@ -13,7 +13,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 using UserCalcualtorUI;
 using CshCalculatorUIAPI;
-using CshCalculatorUIAPITest;
+//using CshCalculatorUIAPITest;
 //using CshConsoleAPI;
 // using UserCalcualtorUI;
 

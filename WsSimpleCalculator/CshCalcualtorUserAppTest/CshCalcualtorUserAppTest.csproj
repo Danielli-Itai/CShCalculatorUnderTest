@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\WsSimpleCalculator\packages\MSTest.TestAdapter.2.2.7\build\net45\MSTest.TestAdapter.props" Condition="Exists('..\WsSimpleCalculator\packages\MSTest.TestAdapter.2.2.7\build\net45\MSTest.TestAdapter.props')" />
+  <Import Project="..\packages\MSTest.TestAdapter.2.2.7\build\net45\MSTest.TestAdapter.props" Condition="Exists('..\packages\MSTest.TestAdapter.2.2.7\build\net45\MSTest.TestAdapter.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{43723E42-EED6-4088-ACC9-B7B9F02CA3D3}</ProjectGuid>
+    <ProjectGuid>{2BCFA9AC-CA9A-4539-8D98-53ACDAB634FA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CshCalculatorUIAPITest</RootNamespace>
-    <AssemblyName>CshCalculatorUIAPITest</AssemblyName>
+    <RootNamespace>CshCalcualtorUserAppTest</RootNamespace>
+    <AssemblyName>CshCalcualtorUserAppTest</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -41,42 +41,24 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\WsSimpleCalculator\packages\MSTest.TestFramework.2.2.7\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.dll</HintPath>
+      <HintPath>..\packages\MSTest.TestFramework.2.2.7\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\WsSimpleCalculator\packages\MSTest.TestFramework.2.2.7\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll</HintPath>
+      <HintPath>..\packages\MSTest.TestFramework.2.2.7\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConsoleBaseTest\CshBaseLibTest.cs" />
-    <Compile Include="ConsoleCmdTest\CommandsAppTest.cs" />
-    <Compile Include="ConsoleCmdTest\CommandsGuiTest.cs" />
+    <Compile Include="UnitTestMultiply.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CShCalculatorLibTest\CShCalcualtorLibTest.csproj">
-      <Project>{218da32a-c653-40ee-afb8-d7414d6adcc0}</Project>
-      <Name>CShCalcualtorLibTest</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\CShCalculatorLib\CShCalcualtorLib.csproj">
-      <Project>{1b69216b-0f6a-4a4d-baaa-71d0f85b2044}</Project>
-      <Name>CShCalcualtorLib</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\CShCalculatorUIAppAPI\CshCalculatorUIAPI.csproj">
-      <Project>{5f60b826-2c6c-4bde-abb6-fb3c97af77b8}</Project>
-      <Name>CshCalculatorUIAPI</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\CShCalculatorLibCtrl\CShCalculatorCtrl.csproj">
-      <Project>{28cb1b92-e70e-431e-9e73-a4d7f12c2eb2}</Project>
-      <Name>CShCalculatorCtrl</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\CshCalculatorUIApp\CshCalcualtorUserApp.csproj">
+    <ProjectReference Include="..\..\CshCalculatorUIApp\CshCalcualtorUserApp.csproj">
       <Project>{d9937b6d-6bbe-4ded-94e8-8805b7a4c9d5}</Project>
       <Name>CshCalcualtorUserApp</Name>
     </ProjectReference>
@@ -87,8 +69,8 @@
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\WsSimpleCalculator\packages\MSTest.TestAdapter.2.2.7\build\net45\MSTest.TestAdapter.props')" Text="$([System.String]::Format('$(ErrorText)', '..\WsSimpleCalculator\packages\MSTest.TestAdapter.2.2.7\build\net45\MSTest.TestAdapter.props'))" />
-    <Error Condition="!Exists('..\WsSimpleCalculator\packages\MSTest.TestAdapter.2.2.7\build\net45\MSTest.TestAdapter.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\WsSimpleCalculator\packages\MSTest.TestAdapter.2.2.7\build\net45\MSTest.TestAdapter.targets'))" />
+    <Error Condition="!Exists('..\packages\MSTest.TestAdapter.2.2.7\build\net45\MSTest.TestAdapter.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MSTest.TestAdapter.2.2.7\build\net45\MSTest.TestAdapter.props'))" />
+    <Error Condition="!Exists('..\packages\MSTest.TestAdapter.2.2.7\build\net45\MSTest.TestAdapter.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MSTest.TestAdapter.2.2.7\build\net45\MSTest.TestAdapter.targets'))" />
   </Target>
-  <Import Project="..\WsSimpleCalculator\packages\MSTest.TestAdapter.2.2.7\build\net45\MSTest.TestAdapter.targets" Condition="Exists('..\WsSimpleCalculator\packages\MSTest.TestAdapter.2.2.7\build\net45\MSTest.TestAdapter.targets')" />
+  <Import Project="..\packages\MSTest.TestAdapter.2.2.7\build\net45\MSTest.TestAdapter.targets" Condition="Exists('..\packages\MSTest.TestAdapter.2.2.7\build\net45\MSTest.TestAdapter.targets')" />
 </Project>

@@ -1,25 +1,25 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using CalcualtorLib;
 using System;
+using CalcualtorLib;
 
-namespace CshConsoleTest.ApplicationTest
+
+namespace CalcualtorLibTest
 {
     [TestClass]
-    public class ControlTest
+    public class UnitTestMultiply
     {
         [TestMethod]
-        public void TestMethod1()
+        public void TestMultiply()
         {
             try
             {
-                string result = SimpleCalculator.Add("5", "2");
-                Assert.AreEqual("7", result);
+                string result = SimpleCalculator.Multiply("5", "5");
+                Assert.AreEqual("25", result);
             }
             catch (Exception e)
             {
                 Assert.Fail(e.Message);
             }
-
         }
-}
+    }
 }
