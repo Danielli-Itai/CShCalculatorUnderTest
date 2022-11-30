@@ -45,12 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BaseLib\BaseLib.cs" />
-    <Compile Include="ConsoleApplication\AppCommands.cs" />
-    <Compile Include="Command\Commands.cs" />
-    <Compile Include="Command\CommandsApi.cs" />
+    <Compile Include="Base\BaseLib.cs" />
+    <Compile Include="ConsoleApplication\ConsoleCmd.cs" />
+    <Compile Include="Commands\Commands.cs" />
+    <Compile Include="Commands\CommandsApi.cs" />
     <Compile Include="ConsoleApplication.cs" />
-    <Compile Include="DialogApplication\DialogCommands.cs" />
+    <Compile Include="ConsoleApplication\UserCalculatorCmds.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -62,5 +62,6 @@
       <Name>CshCalcualtorUserApp</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

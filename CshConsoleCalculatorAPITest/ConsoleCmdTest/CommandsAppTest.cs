@@ -11,8 +11,6 @@
 \****************************************************************/
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using CshCalculatorUIAPI;
-//using CshCalculatorUIAPITest;
-//# using CshConsoleAPI;
 
 
 
@@ -28,10 +26,10 @@ namespace CshConsoleTest
 
 
 		[TestMethod]
-		public void TestParser()
+		public void ParserTest()
 		{
 			//	Check command name parsing.
-			Assert.IsTrue(Commands.CMD_ECHO == CommandsApi.CommandName(CMD_LINE_ECHO));
+			Assert.IsTrue(ConsoleCmd.CMD_ECHO == CommandsApi.CommandName(CMD_LINE_ECHO));
 
 			// Check command parameters parsing.
 			string[] parameters = CommandsApi.CommandParams(CMD_LINE_ECHO);
@@ -42,14 +40,14 @@ namespace CshConsoleTest
 
 		//	Test the commands list using the echo command function.
 		[TestMethod]
-		public void TestCommandEcho()
+		public void CommandEchoTest()
 		{
 			//	Check creating a new commands list.
 			Commands pCommands = CommandsApi.CommandsInit();
 			Assert.IsNotNull(pCommands);
 
 			//	Check adding echo command to commands list.
-			Assert.IsTrue(CommandsApi.CommandAdd(ref pCommands, AppCommands.CMD_ECHO, AppCommands.CommandEcho));
+			Assert.IsTrue(CommandsApi.CommandAdd(ref pCommands, ConsoleCmd.CMD_ECHO, ConsoleCmd.EchoCmd));
 
 			//	Execute the echo command in the command list.
 			Assert.IsTrue(CMD_ECHO_PARAM == CommandsApi.CommandExec(pCommands, CMD_LINE_ECHO));

@@ -17,9 +17,9 @@ using System;
 
 namespace CshCalculatorUIAPI
 {
-	public class AppCommands
+	public class ConsoleCmd
 	{
-		public const string CMD_PROMPED = ">";
+        public const string CMD_PROMPED = ">";
 		public const string CMD_ECHO = "echo";
 		public const string CMD_EXIT = "exit";
 
@@ -33,7 +33,7 @@ namespace CshCalculatorUIAPI
 		* Echo demonstrates a command execution function.
 		* the command prints the parameters it receives.
 		*/
-		public static String CommandEcho(string[] parameters)
+		public static String EchoCmd(string[] parameters)
 		{
 			String result = "";
 			foreach (string param in parameters){
@@ -47,7 +47,7 @@ namespace CshCalculatorUIAPI
 		* Exit terminates the application.
 		* the command prints the exit messsage.
 		*/
-		public static String CommandExit(string[] parameters)
+		public static String ExitCmd(string[] parameters)
 		{
 			Console.WriteLine(CMD_EXIT);
 			return(CMD_EXIT);

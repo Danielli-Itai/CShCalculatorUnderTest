@@ -23,12 +23,12 @@ namespace CshCalculatorUIAPI
 
 	public class Commands
 	{
-		public const string CMD_PROMPED = "\n>";
+/*		public const string CMD_PROMPED = "\n>";
 		public const string CMD_ECHO = "echo";
 		public const string PARAMS_START = "(";
 		public const string PARAMS_SEP = ",";
 		public const string PARAMS_END = ")";
-
+*/
 
 
 		Dictionary<string, CommandCb> commands_dic = new Dictionary<string, CommandCb>();

@@ -18,7 +18,7 @@ using System;
 
 namespace CshCalculatorUIAPI
 {
-	public class DialogCommands
+	public class UserCalculatorCmds
 	{
 		public const string GUI_SHOW = "GuiShow";
 		public const string GUI_HIDE = "GuiHide";
@@ -31,40 +31,40 @@ namespace CshCalculatorUIAPI
 		private static ApplicationGUI gui = null;
 		public static void GUI(ApplicationGUI gui)
         {
-			DialogCommands.gui = gui;
+			UserCalculatorCmds.gui = gui;
 		}
 
 		/***
 		* GuiShow opens the application graphical user interface.
 		*/
-		public static String CommandGuiShow(string[] parameters)
+		public static String GuiShowCmd(string[] parameters)
 		{
 			gui.Show();
-			return AppCommands.CMD_OK;
+			return ConsoleCmd.CMD_OK;
 		}
-		public static String CommandGuiHide(string[] parameters)
+		public static String GuiHideCmd(string[] parameters)
 		{
 			gui.Hide();
-			return AppCommands.CMD_OK;
+			return ConsoleCmd.CMD_OK;
 		}
 
-		public static String CommandGuiMult(string[] parameters){
+		public static String GuiMultCmd(string[] parameters){
 			String result = gui.CmdMultiply(parameters[0], parameters[1]);
 			return result;
 
 		}
 
-		public static String CommandGuiAdd(string[] parameters)
+		public static String GuiAddCmd(string[] parameters)
 		{
 			String result = gui.CmdAdd(parameters[0], parameters[1]);
 			return result;
 
 		}
 
-		public static String CommandGuiClose(string[] parameters)
+		public static String GuiCloseCmd(string[] parameters)
 		{
 			gui.Close();
-			return AppCommands.CMD_OK;
+			return ConsoleCmd.CMD_OK;
 		}
 
 	}

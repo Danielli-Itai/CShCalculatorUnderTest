@@ -19,10 +19,10 @@ namespace CshCalculatorUIAPI
 {
 	public class CommandsApi
 	{
-		/***
-		* Command special characters.
+        /***
+		* Commands special characters.
 		*/
-		const char PARAMS_START = '(';
+        const char PARAMS_START = '(';
 		const char PARAMS_SEP = ',';
 		const char PARAMS_END = ')';
 

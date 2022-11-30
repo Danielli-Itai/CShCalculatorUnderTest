@@ -17,7 +17,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CShCalculatorUICtrl", "CShC
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CshCalculatorUserApp", "CshCalculatorUserApp", "{58309EE4-E2E1-4533-A163-37020FBAB0DA}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UserApplicationTest", "UserApplicationTest", "{C2755EF4-84AA-4A7B-9ABA-1AAC25014CB4}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CshCalculatorUserConsoleIntrf", "CshCalculatorUserConsoleIntrf", "{C2755EF4-84AA-4A7B-9ABA-1AAC25014CB4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CshCalculatorUIAPITest", "..\CshConsoleCalculatorAPITest\CshCalculatorUIAPITest.csproj", "{43723E42-EED6-4088-ACC9-B7B9F02CA3D3}"
 EndProject

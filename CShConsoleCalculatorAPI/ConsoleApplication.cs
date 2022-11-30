@@ -37,21 +37,21 @@ namespace CshCalculatorUIAPI
             // Indicates whther to continue reading input.
             bool running = true;
 
-            DialogCommands.GUI(gui);
+            UserCalculatorCmds.GUI(gui);
 
             // Initialize the commands object.
             Commands pCommands = CommandsApi.CommandsInit();
 
             // Assign the general commands to the commands list.
-            CommandsApi.CommandAdd(ref pCommands, AppCommands.CMD_ECHO, AppCommands.CommandEcho);
-            CommandsApi.CommandAdd(ref pCommands, AppCommands.CMD_EXIT, AppCommands.CommandExit);
+            CommandsApi.CommandAdd(ref pCommands, ConsoleCmd.CMD_ECHO, ConsoleCmd.EchoCmd);
+            CommandsApi.CommandAdd(ref pCommands, ConsoleCmd.CMD_EXIT, ConsoleCmd.ExitCmd);
 
             // Assign the aplication GUI commands to the commands list.
-            CommandsApi.CommandAdd(ref pCommands, DialogCommands.GUI_SHOW, DialogCommands.CommandGuiShow);
-            CommandsApi.CommandAdd(ref pCommands, DialogCommands.GUI_HIDE, DialogCommands.CommandGuiHide);
-            CommandsApi.CommandAdd(ref pCommands, DialogCommands.GUI_MULT, DialogCommands.CommandGuiMult);
-            CommandsApi.CommandAdd(ref pCommands, DialogCommands.GUI_ADD, DialogCommands.CommandGuiAdd);
-            CommandsApi.CommandAdd(ref pCommands, DialogCommands.GUI_CLOSE, DialogCommands.CommandGuiClose);
+            CommandsApi.CommandAdd(ref pCommands, UserCalculatorCmds.GUI_SHOW, UserCalculatorCmds.GuiShowCmd);
+            CommandsApi.CommandAdd(ref pCommands, UserCalculatorCmds.GUI_HIDE, UserCalculatorCmds.GuiHideCmd);
+            CommandsApi.CommandAdd(ref pCommands, UserCalculatorCmds.GUI_MULT, UserCalculatorCmds.GuiMultCmd);
+            CommandsApi.CommandAdd(ref pCommands, UserCalculatorCmds.GUI_ADD, UserCalculatorCmds.GuiAddCmd);
+            CommandsApi.CommandAdd(ref pCommands, UserCalculatorCmds.GUI_CLOSE, UserCalculatorCmds.GuiCloseCmd);
 
 
 
@@ -59,7 +59,7 @@ namespace CshCalculatorUIAPI
             while (running)
             {
                 // Print command promped '>'
-                Console.Write(AppCommands.CMD_PROMPED);
+                Console.Write(ConsoleCmd.CMD_PROMPED);
 
                 // Get console command text"
                 string command_line = GetInputAsync().Result;
@@ -72,7 +72,7 @@ namespace CshCalculatorUIAPI
 
                 // Wite the result to the console.
                 Console.Out.WriteLine(result);
-                running = (AppCommands.CMD_EXIT != result);
+                running = (ConsoleCmd.CMD_EXIT != result);
             }
 
             //  Exit command was issued.
